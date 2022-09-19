@@ -1,0 +1,232 @@
+.FooterMain {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 100%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  position: relative;
+}
+
+.hostingerDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.hostingerDiv img {
+  width: 30rem;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+.hostingerDiv h2 {
+  font-size: 1.8rem;
+  color: gray;
+  font-weight: 400;
+}
+.socialLinks {
+  width: 70%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+.socialLinks .slink {
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  box-sizing: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.fa-brands {
+  font-size: 3rem;
+}
+.slink::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -12rem;
+  width: 4rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skew(45deg);
+  transition: 0.5s;
+}
+
+.socialLinks li:hover .slink::before {
+  right: 12rem;
+}
+.footers {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.194);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.Parts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footerSectionPart {
+  display: flex;
+  flex-direction: column;
+}
+.footerSectionPart h3 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  color: rgba(234, 224, 224, 0.603);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.links a:hover {
+  color: rgb(255, 255, 255);
+}
+#secondLinkPart {
+  margin-top: 5rem;
+}
+
+.footers p {
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid gray;
+  font-size: 1.8rem;
+  color: rgba(233, 224, 224, 0.815);
+  text-align: center;
+}
+.footers p a {
+  color: rgba(233, 224, 224, 0.815);
+}
+
+@media only screen and (max-width: 1244px) {
+  .socialLinks {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hostingerDiv {
+    width: 80%;
+  }
+  .socialLinks {
+    width: 70%;
+  }
+  .socialLinks a {
+    width: 5rem;
+    height: 5rem;
+  }
+  .fa-brands {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .socialLinks {
+    width: 90%;
+  }
+  .socialLinks a {
+    width: 6rem;
+    height: 6rem;
+  }
+  .fa-brands {
+    font-size: 2.5rem;
+  }
+  .Parts {
+    flex-wrap: wrap;
+  }
+  .footerSectionPart {
+    width: 30%;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 586px) {
+  .lastPart {
+    display: none;
+  }
+  .footerSectionPart {
+    width: 40%;
+    margin-top: 3rem;
+  }
+  .footers p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hostingerDiv {
+    width: 90%;
+  }
+  .hostingerDiv h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .socialLinks {
+    width: 100%;
+  }
+  .lastPart {
+    display: none;
+  }
+  .footerSectionPart {
+    width: 40%;
+    margin-top: 3rem;
+  }
+  .footers p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .hostingerDiv h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .socialLinks {
+    width: 100%;
+  }
+  .socialLinks a {
+    width: 4rem;
+    height: 4rem;
+  }
+  .fa-brands {
+    font-size: 2rem;
+  }
+  .footerSectionPart {
+    width: 40%;
+    margin-top: 3rem;
+  }
+  .footers p {
+    font-size: 1rem;
+  }
+}

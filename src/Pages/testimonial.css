@@ -1,0 +1,368 @@
+.TesttimonialMain {
+  min-height: 100vh;
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  overflow: hidden;
+}
+
+.TesttimonialMain h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding-top: 5rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 85%;
+  min-height: 60vh;
+}
+
+.testimonialBox {
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+  backdrop-filter: blur(50px);
+  border-radius: 6px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#userImg {
+  border: 2px solid rgba(255, 255, 255, 0.292);
+  width: 10rem;
+  object-fit: cover;
+  background-position: center;
+  height: max-content;
+  border-radius: 50%;
+  position: absolute;
+  top: -5rem;
+  left: 3rem;
+  z-index: 1;
+}
+
+.testimonialBox h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.testimonialBox h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.ratings {
+  margin-top: 1rem;
+  display: flex;
+}
+.fa-star,
+.fa-star-half-stroke {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: yellow;
+}
+.userName {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.fa-quote-left {
+  position: absolute;
+  right: 5rem;
+  bottom: 1rem;
+  font-size: 7rem;
+}
+
+.cloudHosting {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.leftSideCloud {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftSideCloud img {
+  width: 70%;
+  height: max-content;
+  object-fit: cover;
+}
+.rightSideCloud {
+  width: 50%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rightSideCloud h2 {
+  letter-spacing: 1px;
+  font-size: 4rem;
+  margin-top: 5rem;
+  font-weight: 500;
+}
+.rightSideCloud a {
+  width: 60%;
+}
+
+#Cloudplans {
+  letter-spacing: 1px;
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  background-color: #e52948;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.187);
+}
+#Cloudplans:hover {
+  background-color: #eb2546;
+  transform: translateY(-5px);
+}
+
+.guarantee {
+  margin-top: 7rem;
+}
+.guarantee h2 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+.guarantee h3 {
+  color: gray;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1546px) {
+  .testimonials {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1244px) {
+  .TesttimonialMain h1 {
+    padding-top: 5rem;
+  }
+  .leftSideCloud img {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1029px) {
+  .TesttimonialMain h1 {
+    padding-top: 5rem;
+  }
+
+  .cloudHosting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .leftSideCloud {
+    display: none;
+  }
+  .rightSideCloud {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+  }
+  .guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rightSideCloud a {
+    width: 60%;
+  }
+  #Cloudplans {
+    margin-top: 3rem;
+    margin-right: auto;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.2rem 0;
+  }
+  .guarantee h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .testimonials {
+    margin-top: 0;
+    min-height: 60vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .TesttimonialMain h1 {
+    padding-top: 6%;
+  }
+  .testimonials {
+    width: 85%;
+  }
+  .testimonialBox {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #userImg {
+    flex: 2;
+    border: 2px solid rgba(255, 255, 255, 0.292);
+    width: 10rem;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .content {
+    margin-left: 2rem;
+    flex: 5;
+  }
+}
+
+@media only screen and (max-width: 828px) {
+  .TesttimonialMain h1 {
+    padding-top: 10rem;
+    font-size: 2.7rem;
+  }
+  .testimonials {
+    margin-top: 2rem;
+    min-height: 50vh;
+  }
+}
+@media only screen and (max-width: 788px) {
+  .TesttimonialMain h1 {
+    padding-top: 15rem;
+    font-size: 2.7rem;
+  }
+  .testimonials {
+    margin-top: 2rem;
+    min-height: 50vh;
+  }
+  .guarantee h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .rightSideCloud h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .guarantee h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+  .guarantee h3 {
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .TesttimonialMain h1 {
+    padding-top: 20rem;
+    font-size: 2.7rem;
+  }
+  .rightSideCloud {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  .rightSideCloud h2 {
+    letter-spacing: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .rightSideCloud {
+    width: 100%;
+    height: auto;
+  }
+  .rightSideCloud h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .guarantee h2 {
+    font-size: 2rem;
+  }
+  .guarantee h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .TesttimonialMain h1 {
+    padding-top: 20rem;
+    font-size: 2.2rem;
+  }
+  .testimonials {
+    width: 95%;
+    margin-top: 2rem;
+    min-height: 55vh;
+  }
+}
+@media only screen and (max-width: 487px) {
+  .TesttimonialMain h1 {
+    padding-top: 5rem;
+    font-size: 2.2rem;
+  }
+  .testimonials {
+    width: 95%;
+    margin-top: 0;
+    min-height: 45vh;
+  }
+  .fa-quote-left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .TesttimonialMain h1 {
+    padding-top: 25rem;
+  }
+  .testimonials {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 407px) {
+  .TesttimonialMain h1 {
+    padding-top: 30rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .TesttimonialMain h1 {
+    padding-top: 30rem;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .TesttimonialMain h1 {
+    padding-top: 45rem;
+  }
+}
