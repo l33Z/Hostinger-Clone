@@ -131,7 +131,7 @@ li {
   text-align: center;
 }
 .footers p a {
-  color: rgba(233, 224, 224, 0.815);
+  color: rgba(255, 255, 255, 0.815);
 }
 
 @media only screen and (max-width: 1244px) {
@@ -202,6 +202,10 @@ li {
   .footerSectionPart {
     width: 40%;
     margin-top: 3rem;
+  }
+  .socialLinks .slink {
+    width: 5rem;
+    height: 5rem;
   }
   .footers p {
     font-size: 1.2rem;

@@ -62,13 +62,13 @@ nav {
 .subDetailsContainer {
   font-size: 1.5rem;
   width: 100%;
-  color: black;
   padding: 1.5rem 3rem;
   min-height: 5rem;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(15, 83, 255, 0.258);
   color: white;
+  z-index: 500;
 }
 
 .lastSub {
@@ -118,6 +118,7 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   transition: all 0.3s ease;
 }
+
 .loginBtn:hover {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.822);
@@ -186,7 +187,7 @@ nav {
     font-size: 2.2rem;
   }
   .rightSideNav .Links .title {
-    border: 1px solid rgb(237, 231, 231);
+    border: 1px solid rgb(255, 255, 255);
     border-left: none;
     border-right: none;
     width: 100%;
@@ -205,6 +206,9 @@ nav {
     margin-top: 2rem;
     background-color: #ef8697;
   }
+  .loginBtn a {
+    width: 100% !important;
+  }
   .loginBtn:hover {
     background: #ef8697;
     border: none;
@@ -215,12 +219,32 @@ nav {
 
   .subMenu {
     width: 90%;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+    z-index: 1000;
+  }
+
+  .subDetailsContainer {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+  }
+  .subDetailsContainer:hover {
+    opacity: 1;
+  }
+  .lastSub {
+    border-bottom: none;
   }
   .leftSideNav {
     padding-left: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .rightSubMenu {
+    width: 100%;
   }
   #hLogo {
     width: 15rem;

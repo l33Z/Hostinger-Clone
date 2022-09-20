@@ -1,21 +1,21 @@
 import { useState } from "react";
 import HostingerLogo from "../assets/logo.svg";
 import "./navbar.css";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [Hsotingclicked, setHostingclicked] = useState(false);
   const [Vpsclicked, setVpsclicked] = useState(false);
   const [Emailclicked, setEmailclicked] = useState(false);
   const [Domainclicked, setDomainclicked] = useState(false);
   const [MenuActive, setMenuActive] = useState(false);
-  
+
   return (
     <>
       <nav>
         <div className="leftSideNav">
-          <a href="/">
+          <NavLink to="/">
             <img src={HostingerLogo} alt="hostingerLogo" id="hLogo" />
-          </a>
+          </NavLink>
         </div>
 
         <div
@@ -267,8 +267,9 @@ const Navbar = () => {
               </div>
             </li>
           </ul>
-
-          <div className="loginBtn">Login 🔒</div>
+          <NavLink to="/login">
+            <div className="loginBtn">Login 🔒</div>
+          </NavLink>
           <div className="cartOption">
             <i className="fa-solid fa-cart-plus"></i>Cart
           </div>

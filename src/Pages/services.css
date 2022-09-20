@@ -184,6 +184,9 @@
   .saly2 {
     width: 100% !important;
   }
+  .rightSideServiceBox h3 {
+    text-align: justify;
+  }
 }
 @media only screen and (max-width: 520px) {
   .leftSidePart {

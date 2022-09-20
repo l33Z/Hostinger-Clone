@@ -2,6 +2,11 @@ import "./welcome.css";
 import Navbar from "../Components/Navbar";
 import HeroBg from "../assets/salyNew.png";
 
+import Pricing from "./Pricing";
+import Services from "./Services";
+import Testimonial from "./Testimonial";
+import Footer from "./Footer";
+
 const Welcome = () => {
   return (
     <>
@@ -66,6 +71,10 @@ const Welcome = () => {
           </div>
         </div>
       </div>
+      <Pricing />
+      <Services />
+      <Testimonial />
+      <Footer />
     </>
   );
 };
